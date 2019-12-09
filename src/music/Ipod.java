@@ -6,11 +6,7 @@ public class Ipod extends Title implements Player{
 	}
 
 	public void useIpod(String music, String artist) {
-		if(music==null||music==""||artist==null||artist=="") {
-			System.out.println("再生に失敗しました。");
-		}else {
-			display(music,artist);
-		}
+		display(music,artist);
 	}
 
 	public void start() {
@@ -19,6 +15,8 @@ public class Ipod extends Title implements Player{
 
 	public void pause() {
 		System.out.println("かしこまりました、一時停止します");
+
+
 	}
 
 	public void  stop() {

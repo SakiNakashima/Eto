@@ -6,11 +6,7 @@ public class Walkman extends Title implements Player{
 	}
 
 	public void useWalkman(String music, String artist) {
-		if(music==null||music==""||artist==null||artist=="") {
-			System.out.println("再生に失敗しました。");
-		}else {
-			display(music,artist);
-		}
+		display(music,artist);
 	}
 
 	public void start() {
